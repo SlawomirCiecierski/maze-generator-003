@@ -29,7 +29,10 @@ public class ControllerJSON implements ControllerInterface {
             Instant instant=Instant.now();
             instant.toEpochMilli();
 //            nazwa pliku JSON powinna zawierać dodatkowo rozmiar labiryntu i level
-            fileName ="d:\\ciecierski\\projects\\maze-json\\" +level+"-"+i+"-maze-h"+height+"-w"+weight+"-"+instant.toString().substring(20)+".json";
+
+            fileName ="C:\\Users\\ciecierski\\Desktop\\projects\\maze-json\\" +level+"-"+i+"-maze-h"+height+"-w"+weight+"-"+instant.toString().substring(20)+".json";
+
+            // fileName ="d:\\ciecierski\\projects\\maze-json\\" +level+"-"+i+"-maze-h"+height+"-w"+weight+"-"+instant.toString().substring(20)+".json";
 
             jsonFileServices.serializeJSONMaze((mazeGenerator.makeMaze(mazeModel)), fileName);
 
